@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APP TODO LIST</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="app">
-    <ul data-todo-list></ul>
+  <div class="container">
+    <div id="app">
+      <h1 class="app-title">Lista TODO</h1>
+      <ul class="list-group" data-todo-list></ul>
 
-    <input type="text" name="todo" data-input-todo>
-    <button data-add-todo>Adicionar</button>
+      <div class="form-group">
+        <input type="text" class="form-control" name="todo" id="todo" placeholder="Digite um texto" data-input-todo>
+        <button class="btn btn-primary" data-add-todo>Adicionar</button>
+      </div>
+      
+    </div>
   </div>
+  
   <script src="app.js"></script>
 
 </body>
